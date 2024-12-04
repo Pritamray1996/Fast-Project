@@ -1,0 +1,244 @@
+
+/* google font */
+/* font-family: "Roboto", serif;
+font-family: "Lato", sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:wght@300;400;500;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 1.6;
+    color: #bebbc7;
+    background-image: url(image/background\ img.jpg);
+    background-position: center;
+    background-size:cover;
+    background-attachment: fixed;
+
+  
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: "Roboto", serif;
+    font-weight: 700;
+    
+}
+a{
+    font-weight: 500;
+}
+/* Basic CSS */
+.container{
+    padding: 0 15%;
+    
+}
+a.theme-button{
+    text-decoration: none;
+    background-color:#00c0ff ;
+    color: white;
+    text-transform: uppercase;
+    padding: 16px 32px;
+    display: inline-block;
+    margin-top: 30px;
+    border-radius: 50px;
+    transition: 0.5s;
+}
+a.theme-button:hover{
+    background-color: #fff;
+    color: #00c0ff;
+}
+a.theme-button-small{
+    text-decoration: none;
+    background-color:#00c0ff ;
+    color: white;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 30px;
+    border-radius: 50px;
+    transition: 0.5s;
+    font-size: 14px;
+}
+a.theme-button-small:hover{
+    background-color: #fff;
+    color: #00c0ff;
+
+}
+.section-heading{
+    text-align: center;
+    margin-bottom: 75px;
+}
+.section-heading h3{
+font-size: 16px;
+text-transform: uppercase;
+color: #00c0ff;
+}
+.section-heading h2{
+font-size: 16px;
+text-transform: capitalize;
+color: #fff;
+font-size: 36px;
+}
+/* header area */
+.header-area{
+    padding: 45px 0;
+}
+.Header-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo a{
+    text-decoration: none;
+}
+.logo h1{
+color: white;
+text-transform: uppercase;
+font-size: 20px;
+}
+.main-menu a{
+text-decoration: none;
+color: white;
+display: inline-block;
+padding: 5px;
+margin-left: 30px;
+transition:0.5s;
+}
+.main-menu a:hover{
+color: #00c0ff;
+}
+/* Hreo area */
+
+.hero-area{
+    padding:80px 0;
+}
+.hreo-content{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+.hero-text h2{
+    font-size: 45px;
+}
+.hero-text p{
+    font-size:20px;
+}
+/*about area css */
+.about-area{
+    background-color:#1e1345;
+    padding: 100px 0;
+}
+.about-contant{
+    display: flex;
+    align-items: center;
+}
+.about-image{
+    flex: 1;
+}
+.about-text{
+    flex: 1;
+}
+/* service area */
+.service-area{
+    padding: 100px 0;
+}
+
+.service-content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+.single-service{
+    background-color: #3a2b71;
+    padding: 30px;
+}
+.single-service h3{
+    font-size: 26px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+/* Contact-area */
+.Contact-area{
+    background-color:#1e1345;
+    padding: 100px 0;
+}
+.contact-content form{
+    display: grid;
+    grid-template-columns: 2, 1fr;
+    gap: 15px;
+    grid-template-areas:
+    "f l" 
+    "e p "
+    "m m "
+    "s s";
+}
+#First-name{
+    grid-area: f;
+}
+#last-name{
+    grid-area: l;
+}
+#Email-address{
+    grid-area: e;
+}
+#Phone-Number{
+    grid-area: p;
+}
+#Massage {
+    grid-area:m;
+}
+#Send-Massage{
+    grid-area: s;
+    background-color: #3a2b71;
+    cursor: pointer;
+}
+.contact-content input{
+    font-size: 17px;
+    padding: 12px;
+    background-color: transparent;
+    border: 1px solid #3a2b71;
+    color: #fff;
+}
+.contact-content textarea{
+    font-size: 17px;
+    font-family: "Lato", sans-serif;
+    padding: 12px;
+}
+textarea{
+    background-color: transparent;
+    border: 1px solid #3a2b71;
+    color: #fff;
+}
+/* Footre area */
+
+.Fooder-area{
+    padding: 25px 0;
+    text-align: center;
+    background-color: #1e1345;
+    border-top: 1px solid #3a2b71;
+}
+@media(max-width:1199px){
+    /* .hero-image img{
+        width: 500px;
+    } */
+}
+@media(max-width:991px){
+    .hero-text h2{
+        font-size: 52px;
+    }
+    .hreo-content{
+        flex-direction: column-reverse;
+    }
+    .service-content{
+       grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media(max-width:575px){
+    .hero-text h2{
+        font-size: 32px;
+    }
+}
