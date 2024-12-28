@@ -17,7 +17,7 @@ body{
     font-size: 17px;
     line-height: 1.6;
     color: #bebbc7;
-    background-image: url(image/background-img.jpg);
+    background-image: url(./Image/background-img.jpg);
     background-position: center;
     background-size:cover;
     background-attachment: fixed;
